@@ -17,6 +17,7 @@ import ArrowBackIcon from 'material-ui-icons/ArrowBack';
 import MUI from "./MUI";
 import Theme from "./Theme";
 import Overrides from "./Overrides";
+import Layout from "./Layout";
 import Topics from "./Topics";
 
 
@@ -68,6 +69,7 @@ class BasicRouter extends Component {
           <Button component={props => <Link to="/mui" {...props} />}>MUI</Button>
           <Button component={props => <Link to="/theme" {...props} />}>Theme</Button>
           <Button component={props => <Link to="/overrides" {...props} />}>Overrides</Button>
+          <Button component={props => <Link to="/layout" {...props} />}>Layout</Button>
           <Button component={props => <Link to="/topics" {...props} />}>Topics</Button>
         </Toolbar>
       </AppBar>
@@ -79,12 +81,12 @@ class BasicRouter extends Component {
           <div>
             { appBar }
             <div className={classes.contentWrapper}>
-
               <div>
                 <Route exact path="/" component={Home}/>
                 <Route path="/mui" component={MUI}/>
                 <Route path="/theme" component={Theme}/>
                 <Route path="/overrides" component={Overrides}/>
+                <Route path="/layout" component={Layout}/>
                 <Route path="/topics" component={Topics}/>
               </div>
             </div>
