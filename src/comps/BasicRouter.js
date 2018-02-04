@@ -18,6 +18,7 @@ import MUI from "./MUI";
 import Theme from "./Theme";
 import Overrides from "./Overrides";
 import Layout from "./Layout";
+import Sliders from "./Sliders";
 import Topics from "./Topics";
 
 
@@ -70,6 +71,7 @@ class BasicRouter extends Component {
           <Button component={props => <Link to="/theme" {...props} />}>Theme</Button>
           <Button component={props => <Link to="/overrides" {...props} />}>Overrides</Button>
           <Button component={props => <Link to="/layout" {...props} />}>Layout</Button>
+          <Button component={props => <Link to="/sliders" {...props} />}>Sliders</Button>
           <Button component={props => <Link to="/topics" {...props} />}>Topics</Button>
         </Toolbar>
       </AppBar>
@@ -87,6 +89,7 @@ class BasicRouter extends Component {
                 <Route path="/theme" component={Theme}/>
                 <Route path="/overrides" component={Overrides}/>
                 <Route path="/layout" component={Layout}/>
+                <Route path="/sliders" component={Sliders}/>
                 <Route path="/topics" component={Topics}/>
               </div>
             </div>
