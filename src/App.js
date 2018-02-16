@@ -17,16 +17,16 @@ import './App.css';
 
 
 // https://material-ui-next.com/customization/themes/
-const theme = createMuiTheme({
-  palette: {
-    primary: pink,
-    secondary: teal,
-    error: red,
-  },
-  typography: {
-    fontFamily: 'Varela Round, sans-serif'
-  }
-});
+// const theme = createMuiTheme({
+//   palette: {
+//     primary: pink,
+//     secondary: teal,
+//     error: red,
+//   },
+//   typography: {
+//     fontFamily: 'Varela Round, sans-serif'
+//   }
+// });
 
 
 // const theme = createMuiTheme({
@@ -46,22 +46,22 @@ const theme = createMuiTheme({
 //   },
 // });
 
-// const theme = createMuiTheme({
-//   palette: {
-//     primary: {
-//       light: '#f1978c',
-//       main: '#e4605a',
-//       dark: '#d0112b',
-//       contrastText: '#fff',
-//     },
-//     secondary: {
-//       light: '#7b9fc2',
-//       main: '#2e72a4',
-//       dark: '#004a87',
-//       contrastText: '#000',
-//     },
-//   },
-// });
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      light: '#f1978c',
+      main: '#e4605a',
+      dark: '#d0112b',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#7b9fc2',
+      main: '#2e72a4',
+      dark: '#004a87',
+      contrastText: '#000',
+    },
+  },
+});
 
 
 

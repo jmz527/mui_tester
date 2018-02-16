@@ -19,6 +19,7 @@ import CssInJs from "./theme/CssInJs";
 import JssRegistry from "./theme/JssRegistry";
 import RenderProps from "./theme/RenderProps";
 import StyledComponents from "./theme/StyledComponents";
+import Colors from "./theme/Colors";
 
 const styles = theme => ({
   root: {
@@ -38,6 +39,7 @@ class Theme extends Component {
         <Button raised className={classes.button} component={props => <Link to={`${match.url}/default`} {...props} />}>Default Theme</Button>
         <Button raised className={classes.button} component={props => <Link to={`${match.url}/customization`} {...props} />}>Customization</Button>
         <Button raised className={classes.button} component={props => <Link to={`${match.url}/cssinjs`} {...props} />}>CSS in JS</Button>
+        <Button raised className={classes.button} component={props => <Link to={`${match.url}/colors`} {...props} />}>Colors</Button>
       </div>
     )
 
@@ -51,6 +53,7 @@ class Theme extends Component {
         <Route path={`${match.url}/default`} component={ThemeDefault}/>
         <Route path={`${match.url}/customization`} component={Customiz}/>
         <Route path={`${match.url}/cssinjs`} component={CSSINJS}/>
+        <Route path={`${match.url}/colors`} component={Colors}/>
 
         <Route exact path={match.url} render={() => (
           <h3>Please select a topic.</h3>
